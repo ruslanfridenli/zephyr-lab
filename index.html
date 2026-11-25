@@ -1,0 +1,16 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Zephyr Lab — Lua Automata</title><link rel="stylesheet" href="style.css"></head><body>
+<header><h1>◈ zephyr lab</h1><nav class="lang"><button data-lang="en" class="on">EN</button><button data-lang="de">DE</button></nav></header>
+<main><aside class="panel">
+<section><h2 data-i="controls">Controls</h2><div class="btncol">
+<button id="run" class="primary" data-i="run">▶ Run</button>
+<button id="step" data-i="step">⏭ Step</button>
+<button id="reset" data-i="reset">↻ Reset</button></div></section>
+<section><h2 data-i="setup">Setup</h2>
+<label><span data-i="mode">Mode</span><select id="mode"><option value="ca">elementary ca</option><option value="life">game of life</option></select></label>
+<label id="rulewrap"><span data-i="rule">Rule</span><select id="rule"><option selected>30</option><option >90</option><option >110</option><option >150</option><option selected>30</option><option >90</option></select></label>
+<label><span data-i="speed">Speed</span><select id="speed"><option value="8">8 gen/s</option><option value="15" selected>15 gen/s</option><option value="30">30 gen/s</option><option value="60">60 gen/s</option></select></label>
+<label><span data-i="seed">Seed</span><div class="seedrow"><input type="number" id="seed" value="9043"><button id="dice">⚄</button></div></label></section>
+<section class="stats"><span data-i="gen">Generation</span> <b id="gen">0</b> · <span data-i="pop">Population</span> <b id="pop">0</b></section>
+<section><h2 data-i="about">About</h2><p class="about" data-i="abouttext"></p></section>
+</aside><div class="stage"><canvas id="cv"></canvas></div></main>
+<script type="module" src="app.js"></script></body></html>
